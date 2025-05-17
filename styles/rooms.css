@@ -1,0 +1,645 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #FAF4EF;
+  color: #2E2E2E;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header + Nav */
+/* /* General styling for the header */
+.main-header {
+    background-color: #e67e00;  /* Changed back to your previous color */
+    padding: 15px 0;
+    color: white;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-logo {
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px;
+  }
+  
+  .logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .navbar {
+    display: flex; /* Make the navbar items appear in a row */
+    gap: 20px; /* Space between navbar items */
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f0c783;  /* Change to your preferred hover color */
+  }
+  
+  .nav-links .active {
+    color: #dad3c8;  /* Active link color */
+  }
+  
+  /* Mobile responsiveness */
+ @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .site-logo {
+    height: 40px; /* Reduce logo size */
+    margin-right: 10px;
+  }
+
+  .logo {
+    font-size: 20px; /* Reduce title size */
+    margin: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-logo {
+    height: 35px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
+
+  
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 2rem;
+  color: #D87D4A;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-title span {
+  font-size: 1rem;
+  color: #7a4c28;
+  display: block;
+  margin-top: 8px;
+}
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 1.6rem;
+        margin-bottom: 28px;
+    }
+    .page-title span{
+      font-size: 0.85rem;
+      margin-top: 6px;
+    }
+}
+/* Rooms Section */
+.rooms-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.room-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 18px rgb(216 125 74 / 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 24px rgb(216 125 74 / 0.4);
+}
+
+.room-card h2 {
+  color: #D87D4A;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.room-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #5a3e1b;
+}
+
+.book-btn {
+  background-color: #D87D4A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* Removes underline */
+  display: block;
+  width: fit-content;
+  margin: 12px auto 0 auto; /* Centers button horizontally */
+}
+
+.book-btn:hover {
+  background-color: #e89d72;
+  transform: scale(1.05);
+}
+
+.book-btn:active {
+  transform: scale(0.97);
+}
+
+/* ------------------------------------------
+   Mobile Responsive Styles for Rooms Section
+-------------------------------------------*/
+@media (max-width: 600px) {
+  .rooms-section {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+    padding: 0 10px; /* Optional horizontal padding */
+  }
+
+  .room-card {
+    padding: 18px 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(216, 125, 74, 0.12);
+  }
+
+  .room-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .room-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .book-btn {
+    font-size: 0.95rem;
+    padding: 9px 16px;
+    border-radius: 6px;
+  }
+}
+
+/* Info Section */
+.info-section {
+  background-color: white;
+  padding: 40px 25px 50px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(216 125 74 / 0.1);
+  color: #5a3e1b;
+  margin-bottom: 60px;
+}
+
+.info-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #D87D4A;
+  font-size: 1.6rem;
+}
+
+/* Cards container for info */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+}
+
+/* Single info card */
+.info-card {
+  background-color: #F9ECE4;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgb(216 125 74 / 0.12);
+  max-width: 320px;
+  flex: 1 1 280px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 1rem;
+  color: #5a3e1b;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease;
+}
+
+.info-card i {
+  font-size: 2rem;
+  color: #D87D4A;
+  min-width: 36px;
+  text-align: center;
+}
+
+.info-card:hover {
+  box-shadow: 0 12px 25px rgb(216 125 74 / 0.4);
+  background-color: #fde9d6;
+}
+
+/* Occupancy cards */
+.occupancy .info-card {
+  max-width: 320px;
+  font-weight: 700;
+}
+
+/* ---------- MOBILE (≤ 600 px) ---------- */
+@media (max-width: 600px) {
+
+  /* container stacks cards vertically and narrows padding */
+  .info-cards {
+    flex-direction: column;      /* one per row */
+    gap: 16px;                   /* closer spacing */
+    max-width: 320px;             /* fill screen width */
+    margin: 0 auto;
+  }
+
+  /* individual card */
+  .info-card {
+    flex: 1 1 auto;              /* grow / shrink naturally */
+    width: 100%;             /* full-width card */
+    padding: 14px 20px;          /* lighter padding */
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(216,125,74,0.14);
+  }
+
+  /* icon size & alignment */
+  .info-card i {
+    font-size: 1.6rem;           /* smaller icon */
+    min-width: 32px;
+    flex-shrink: 0;
+  }
+
+  /* section heading a bit smaller */
+  .info-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 22px;
+    margin-top: 22px;
+  }
+
+}
+
+
+
+
+
+/* Room Images Section */
+.gallery-section {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color:#e67e00;;
+}
+@media (max-width: 600px) {
+.gallery-section h2{
+  font-size: 24px;
+}
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Carousel images */
+.carousel-img {
+  width: 100%;           /* fill card, but … */
+  max-width: 350px;      /* … never larger than source */
+  height: 350px;          /* let height scale naturally  */
+  object-fit: cover;     /* crops excess, no distortion */
+  border-radius: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.carousel-img:hover {
+  transform: scale(1.05);
+}
+
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+/* Modal Styles */
+/* Modal backdrop */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85); /* semi-transparent dark */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal large image */
+.modal-content {
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  object-fit: contain; /* preserve aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  background-color: white; /* white bg to avoid darkness */
+  display: block;
+  margin: 0 auto;
+  filter: none; /* no blur or dark */
+}
+
+/* Remove any overlay inside modal */
+.modal-overlay {
+  background: none !important;
+  filter: none !important;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 40px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.modal-nav.prev {
+  left: 20px;
+}
+
+.modal-nav.next {
+  right: 20px;
+}
+
+
+
+/* Navigation buttons remain same */
+
+/* Navigation buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(216, 125, 74, 0.8);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background-color: #b35e2b;
+}
+
+.prev-btn {
+  left: 15px;
+}
+
+.next-btn {
+  right: 15px;
+}
+
+/* Modal Styles (same as before) */
+/* .modal {
+  display: none;
+  position: fixed;
+  z-index: 110;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.85);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  transition: 0.3s ease;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.close:hover {
+  color: #D87D4A;
+}
+
+#caption {
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+  padding: 15px 0;
+  user-select: none;
+} */
+
+
+/* Responsive */
+@media (max-width: 600px) {
+.rooms-section {
+grid-template-columns: 1fr;
+}
+
+.info-cards {
+flex-direction: column;
+align-items: center;
+}
+}
+
+
+   /* Footer */
+   footer {
+    background-color: #040505;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid #00796b;
+    text-align: center
+  }
+
+ footer .footer-copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }
+
+
+
+ 

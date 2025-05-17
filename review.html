@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Review - Paradise Wild Sand</title>
+  <link rel="stylesheet" href="styles/review.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Booking Review</h1>
+
+    <div class="section">
+      <h2>User Details</h2>
+      <div class="details" id="userDetails"></div>
+    </div>
+
+    <div class="section">
+      <h2>Stay Information</h2>
+      <div class="details" id="stayDetails"></div>
+    </div>
+
+    <div class="section">
+      <h2>Payment Summary</h2>
+      <div class="details" id="amountToPay"></div>
+    </div>
+
+    <div class="button-wrapper">
+      <button id="payNowBtn">Pay Now</button>
+    </div>
+  </div>
+
+  <!-- Razorpay Script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="scripts/review.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body & Wrapper */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdfb;
+  color: #333;
+  line-height: 1.6;
+}
+
+* /* General styling for the header */
+.main-header {
+    background-color: #e67e00;  /* Changed back to your previous color */
+    padding: 15px 0;
+    color: white;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-logo {
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px;
+  }
+  
+  .logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .navbar {
+    display: flex; /* Make the navbar items appear in a row */
+    gap: 20px; /* Space between navbar items */
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #f0c783;  /* Change to your preferred hover color */
+  }
+  
+  .nav-links .active {
+    color: #dad3c8;  /* Active link color */
+  }
+  
+  /* Mobile responsiveness */
+ @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .site-logo {
+    height: 40px; /* Reduce logo size */
+    margin-right: 10px;
+  }
+
+  .logo {
+    font-size: 20px; /* Reduce title size */
+    margin: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links li {
+    margin: 5px 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-logo {
+    height: 35px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Section Title */
+.booking-form-section h2 {
+  font-size: 28px;
+  color: #d87d4a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form */
+form {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #d87d4a;
+  outline: none;
+}
+
+/* Buttons */
+button,
+#checkPriceBtn,
+#proceedPaymentBtn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background-color: #d87d4a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+#checkPriceBtn:hover,
+#proceedPaymentBtn:hover {
+  background-color: #bb612f;
+}
+
+/* Price Summary */
+.price-details {
+  display: none;
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid #e0b899;
+  background-color: #fff8f2;
+  border-radius: 10px;
+}
+
+.price-details h3 {
+  color: #d87d4a;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.price-details p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .booking-form-section h2 {
+    font-size: 24px;
+  }
+
+  input,
+  select {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  button,
+  #checkPriceBtn,
+  #proceedPaymentBtn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .price-details h3 {
+    font-size: 18px;
+  }
+
+  .price-details p {
+    font-size: 15px;
+  }
+}
+
+
+.room-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+  margin: 12px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.room-option {
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.room-option:hover {
+  color: #d87d4a;
+}
+
+.room-option input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+  border: 1.5px solid #ccc;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.room-option input[type="checkbox"]:checked ~ .checkmark {
+  background-color: #d87d4a;
+  border-color: #d87d4a;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.room-option input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+/* Closed Dates Notice Box */
+.closed-dates-box {
+  background-color: #ffe6e6; 
+  color: #b30000; 
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px auto;
+  font-weight: bold;
+  border: 2px solid #ff4d4d; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Closed Dates List Styling */
+.closed-dates-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+}
+
+.closed-dates-box li {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #800000; 
+}
+
+/* Responsive for mobile and smaller devices */
+@media (max-width: 768px) {
+  .closed-dates-box {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;         /* This keeps it centered */
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .closed-dates-box li {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .closed-dates-box {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .closed-dates-box li {
+    font-size: 13px;
+  }
+}

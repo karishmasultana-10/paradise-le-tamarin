@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking | Paradise Le Tamarin</title>
+  <link rel="stylesheet" href="styles/booking.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Logo" class="site-logo">
+        <h1 class="logo">Paradise Le Tamarin</h1>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="rooms.html" >Rooms</a></li>
+          <li><a href="booking.html" class="active">Booking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="booking-form-section">
+    <div class="container">
+      <h2>Book Your Stay</h2>
+
+      <form id="bookingForm">
+        <label>
+          Name:
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Phone:
+          <input type="tel" name="phone" required />
+        </label>
+
+        <label>
+          Check-in Date:
+          <input type="date" name="checkin" id="check-in" required />
+        </label>
+
+       <label>
+  Check‑out Date:
+  <input type="date" name="checkout" id="check-out" required />
+</label>
+
+
+        <label>
+          Room Type:
+<div class="room-selection">
+  <label class="room-option">
+    <input type="checkbox" name="roomType" value="Forest Breeze">
+    <span class="checkmark"></span>
+    Forest Breeze
+  </label>
+
+  <label class="room-option">
+    <input type="checkbox" name="roomType" value="Nature’s King">
+    <span class="checkmark"></span>
+    Nature’s King
+  </label>
+
+  <label class="room-option">
+    <input type="checkbox" name="roomType" value="Super Saver Suite">
+    <span class="checkmark"></span>
+    Super Saver Suite
+  </label>
+
+  <label class="room-option">
+    <input type="checkbox" name="roomType" value="Mixed Dormitory">
+    <span class="checkmark"></span>
+    Mixed Dormitory
+  </label>
+</div>
+
+
+        </label>
+
+        <label>
+          Guests:
+          <input type="number" name="guests" min="1" required />
+        </label>
+
+        <!-- Check Price button -->
+        <button type="button" id="checkPriceBtn">Check Price</button>
+        
+
+
+        <!-- Price Summary: Hidden initially -->
+<div id="priceDetails" style="display:none; margin-top: 20px;">
+  <p>Total Price: <span id="totalPrice"></span></p>
+  <p>20% Advance to Pay Now: <span id="advanceAmount"></span></p>
+  <p>Remaining Amount at Hotel: <span id="remainingAmount"></span></p>
+</div>
+<div id="proceedPaymentContainer" style="display:none; text-align: center; margin-top: 20px;">
+  <button id="proceedPaymentBtn" class="btn" type="button">Proceed to Payment</button>
+</div>
+
+        
+      </form>
+    </div>
+  </section>
+
+  <div id="closedDatesNotice" class="closed-dates-box" style="display: none;">
+  <h3>⚠️ Unavailable Dates</h3>
+  <ul id="closedDatesList"></ul>
+</div>
+
+
+  <!-- JS is handled in a separate script file -->
+  <script src="scripts/booking.js"></script>
+
+</body>
+</html>
