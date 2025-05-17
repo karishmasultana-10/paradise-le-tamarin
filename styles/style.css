@@ -1,4 +1,4 @@
-/* /* Reset and Base */
+/* Reset and Base */
 * {
     margin: 0;
     padding: 0;
@@ -23,15 +23,12 @@
     padding: 0 20px;
   }
   
-  /* --------------------------------------------- */
   /* Header / Navbar */
-  /* General styling for the header */
-/* /* General styling for the header */
+  
 .main-header {
-    background-color: #e67e00;  /* Changed back to your previous color */
+    background-color: #e67e00; 
     padding: 15px 0;
     color: white;
-    /* position: sticky; */
     top: 0;
     z-index: 1000;
   }
@@ -51,7 +48,7 @@
   }
   
   .site-logo {
-    height: 50px; /* Adjust logo size */
+    height: 50px; 
     margin-right: 10px;
   }
   
@@ -64,8 +61,8 @@
   }
   
   .navbar {
-    display: flex; /* Make the navbar items appear in a row */
-    gap: 20px; /* Space between navbar items */
+    display: flex;
+    gap: 20px; 
   }
   
   .nav-links {
@@ -88,11 +85,11 @@
   }
   
   .nav-links a:hover {
-    color: #f0c783;  /* Change to your preferred hover color */
+    color: #f0c783; 
   }
   
   .nav-links .active {
-    color: #dad3c8;  /* Active link color */
+    color: #dad3c8; 
   }
   
   /* Mobile responsiveness */
@@ -111,12 +108,12 @@
   }
 
   .site-logo {
-    height: 30px; /* Reduce logo size */
+    height: 30px;
     margin-right: 10px;
   }
 
   .logo {
-    font-size: 20px; /* Reduce title size */
+    font-size: 20px;
     margin: 0;
   }
 
@@ -155,9 +152,7 @@
   }
 }
 
-
-  /* --------------------------------------------- */
-  /* Hero Section */
+/* Hero Section */
 
 .hero {
     position: relative;
@@ -230,27 +225,27 @@
   
   @media (max-width: 768px) {
   .hero {
-    padding: 60px 15px;  /* Reduce vertical padding */
-    min-height: 350px;   /* Adjust min height to fit mobile better */
+    padding: 60px 15px;  
+    min-height: 350px;   
   }
 
   .hero-text h2 {
-    font-size: 28px;     /* Smaller heading on mobile */
+    font-size: 28px; 
   }
 
   .hero-text p {
-    font-size: 16px;     /* Smaller paragraph on mobile */
+    font-size: 16px; 
   }
 
   .hero-text .btn {
-    font-size: 15px;     /* Slightly smaller button text */
+    font-size: 15px; 
     padding: 10px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    padding: 40px 10px;  /* Even smaller padding on very small screens */
+    padding: 40px 10px; 
     min-height: 280px;
   }
 
@@ -291,7 +286,7 @@
   }
   
   
-  /* --------------------------------------------- */
+ 
   /* Features Section */
   .features {
     display: flex;
@@ -311,9 +306,9 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
-  /* --------------------------------------------- */
+
  
-/* Tariff Section */
+
 /* Tariff Section */
 .tariff-section {
     background-color: #f9f9f9;

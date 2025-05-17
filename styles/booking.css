@@ -13,134 +13,6 @@ body {
   line-height: 1.6;
 }
 
-* /* General styling for the header */
-.main-header {
-    background-color: #e67e00;  /* Changed back to your previous color */
-    padding: 15px 0;
-    color: white;
-    /* position: sticky; */
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .site-logo {
-    height: 50px; /* Adjust logo size */
-    margin-right: 10px;
-  }
-  
-  .logo {
-    font-size: 34px;
-    font-weight: bold;
-    color: white;
-    margin: 0;
-    font-weight: 700;
-  }
-  
-  .navbar {
-    display: flex; /* Make the navbar items appear in a row */
-    gap: 20px; /* Space between navbar items */
-  }
-  
-  .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #f0c783;  /* Change to your preferred hover color */
-  }
-  
-  .nav-links .active {
-    color: #dad3c8;  /* Active link color */
-  }
-  
-  /* Mobile responsiveness */
- @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .site-logo {
-    height: 40px; /* Reduce logo size */
-    margin-right: 10px;
-  }
-
-  .logo {
-    font-size: 20px; /* Reduce title size */
-    margin: 0;
-  }
-
-  .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-links li {
-    margin: 5px 10px;
-  }
-
-  .nav-links a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .site-logo {
-    height: 35px;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-}
 .container {
   max-width: 900px;
   margin: auto;
@@ -341,7 +213,6 @@ button:hover,
   transform: rotate(45deg);
 }
 
-
 /* Closed Dates Notice Box */
 .closed-dates-box {
   background-color: #ffe6e6; 
@@ -369,12 +240,12 @@ button:hover,
   color: #800000; 
 }
 
-/* Responsive for mobile and smaller devices */
+/* Responsive for mobile*/
 @media (max-width: 768px) {
   .closed-dates-box {
     width: 90%;
     max-width: 600px;
-    margin: 20px auto;         /* This keeps it centered */
+    margin: 20px auto;
     padding: 12px;
     font-size: 14px;
     text-align: center;

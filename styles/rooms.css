@@ -12,138 +12,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
 }
-
-/* Header + Nav */
-/* /* General styling for the header */
-.main-header {
-    background-color: #e67e00;  /* Changed back to your previous color */
-    padding: 15px 0;
-    color: white;
-    /* position: sticky; */
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .site-logo {
-    height: 50px; /* Adjust logo size */
-    margin-right: 10px;
-  }
-  
-  .logo {
-    font-size: 34px;
-    font-weight: bold;
-    color: white;
-    margin: 0;
-    font-weight: 700;
-  }
-  
-  .navbar {
-    display: flex; /* Make the navbar items appear in a row */
-    gap: 20px; /* Space between navbar items */
-  }
-  
-  .nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #f0c783;  /* Change to your preferred hover color */
-  }
-  
-  .nav-links .active {
-    color: #dad3c8;  /* Active link color */
-  }
-  
-  /* Mobile responsiveness */
- @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .site-logo {
-    height: 40px; /* Reduce logo size */
-    margin-right: 10px;
-  }
-
-  .logo {
-    font-size: 20px; /* Reduce title size */
-    margin: 0;
-  }
-
-  .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-links li {
-    margin: 5px 10px;
-  }
-
-  .nav-links a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .site-logo {
-    height: 35px;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-}
-
-  
+ 
 /* Container */
 .container {
   max-width: 900px;
@@ -221,10 +90,10 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  text-decoration: none; /* Removes underline */
+  text-decoration: none;
   display: block;
   width: fit-content;
-  margin: 12px auto 0 auto; /* Centers button horizontally */
+  margin: 12px auto 0 auto;
 }
 
 .book-btn:hover {
@@ -236,14 +105,12 @@ body {
   transform: scale(0.97);
 }
 
-/* ------------------------------------------
-   Mobile Responsive Styles for Rooms Section
--------------------------------------------*/
+
 @media (max-width: 600px) {
   .rooms-section {
-    grid-template-columns: 1fr; /* Single column on mobile */
+    grid-template-columns: 1fr;
     gap: 20px;
-    padding: 0 10px; /* Optional horizontal padding */
+    padding: 0 10px;
   }
 
   .room-card {
@@ -334,22 +201,20 @@ body {
   font-weight: 700;
 }
 
-/* ---------- MOBILE (≤ 600 px) ---------- */
+
 @media (max-width: 600px) {
 
-  /* container stacks cards vertically and narrows padding */
   .info-cards {
-    flex-direction: column;      /* one per row */
-    gap: 16px;                   /* closer spacing */
-    max-width: 320px;             /* fill screen width */
+    flex-direction: column;      
+    gap: 16px;                   
+    max-width: 320px;            
     margin: 0 auto;
   }
-
-  /* individual card */
+ 
   .info-card {
-    flex: 1 1 auto;              /* grow / shrink naturally */
-    width: 100%;             /* full-width card */
-    padding: 14px 20px;          /* lighter padding */
+    flex: 1 1 auto;              
+    width: 100%;            
+    padding: 14px 20px;     
     min-height: 100px;
     display: flex;
     align-items: center;
@@ -361,14 +226,12 @@ body {
     box-shadow: 0 5px 15px rgba(216,125,74,0.14);
   }
 
-  /* icon size & alignment */
   .info-card i {
-    font-size: 1.6rem;           /* smaller icon */
+    font-size: 1.6rem;        
     min-width: 32px;
     flex-shrink: 0;
   }
-
-  /* section heading a bit smaller */
+  
   .info-section h2 {
     font-size: 1.3rem;
     margin-bottom: 22px;
@@ -376,10 +239,6 @@ body {
   }
 
 }
-
-
-
-
 
 /* Room Images Section */
 .gallery-section {
@@ -418,12 +277,12 @@ body {
   display: none;
 }
 
-/* Carousel images */
+
 .carousel-img {
-  width: 100%;           /* fill card, but … */
-  max-width: 350px;      /* … never larger than source */
-  height: 350px;          /* let height scale naturally  */
-  object-fit: cover;     /* crops excess, no distortion */
+  width: 100%;          
+  max-width: 350px;     
+  height: 350px;        
+  object-fit: cover;    
   border-radius: 10px;
   cursor: pointer;
   flex-shrink: 0;
@@ -459,14 +318,14 @@ body {
 }
 
 /* Modal Styles */
-/* Modal backdrop */
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.85); /* semi-transparent dark */
+  background-color: rgba(0,0,0,0.85); 
   display: none;
   justify-content: center;
   align-items: center;
@@ -478,16 +337,16 @@ body {
   width: 90%;
   max-width: 900px;
   max-height: 90vh;
-  object-fit: contain; /* preserve aspect ratio */
+  object-fit: contain; 
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
-  background-color: white; /* white bg to avoid darkness */
+  background-color: white; 
   display: block;
   margin: 0 auto;
-  filter: none; /* no blur or dark */
+  filter: none;
 }
 
-/* Remove any overlay inside modal */
+
 .modal-overlay {
   background: none !important;
   filter: none !important;
@@ -528,10 +387,6 @@ body {
   right: 20px;
 }
 
-
-
-/* Navigation buttons remain same */
-
 /* Navigation buttons */
 .carousel-btn {
   position: absolute;
@@ -561,55 +416,6 @@ body {
   right: 15px;
 }
 
-/* Modal Styles (same as before) */
-/* .modal {
-  display: none;
-  position: fixed;
-  z-index: 110;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.85);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  max-width: 90vw;
-  max-height: 80vh;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.7);
-  transition: 0.3s ease;
-}
-
-.close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  user-select: none;
-  transition: color 0.2s ease;
-}
-
-.close:hover {
-  color: #D87D4A;
-}
-
-#caption {
-  text-align: center;
-  color: #ccc;
-  font-size: 1rem;
-  padding: 15px 0;
-  user-select: none;
-} */
-
-
 /* Responsive */
 @media (max-width: 600px) {
 .rooms-section {
@@ -623,22 +429,22 @@ align-items: center;
 }
 
 
-   /* Footer */
-   footer {
-    background-color: #040505;
-    color: white;
-    padding: 20px;
-    margin-top: 30px;
-    border-top: 2px solid #00796b;
-    text-align: center
-  }
+/* Footer */
+footer {
+  background-color: #040505;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 2px solid #00796b;
+  text-align: center
+}
 
- footer .footer-copyright {
-    margin-top: 30px;
-    font-size: 14px;
-    text-align: center;
-    color: white;
-  }
+footer .footer-copyright {
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
 
 
 
