@@ -23,4 +23,28 @@ Razorpay JS SDK
 Netlify
 Git + GitHub
 
+🗂️ Project layout
 
+.
+├─ index.html              
+├─ rooms.html              
+├─ booking.html            
+├─ admin.html              
+├─ styles/                 
+│   ├─ style.css
+│   └─ booking.css
+│   └─ rooms.css
+│   └─ admin.css
+│   └─ review.css
+└─ scripts/                
+    ├─ script.js
+    └─ admin.js
+    └─ booking.js
+    └─ review.js
+
+Screenshot
+    
+![screenshot](https://github.com/user-attachments/assets/e6373525-a5e7-494e-922d-655811fd618a)
+
+Author
+Karishma Sultana – Web Developer Intern @ Paradise Groups
