@@ -2,7 +2,7 @@
 
 A **static resort‑booking website** for *Paradise Le Tamarin*—a tranquil hideaway on the Goan coast.
 
-[**Live demo →**](https://paradise-letamarin.netlify.app)
+[**Live demo →**](https://paradiseletamarin.netlify.app)
 
 
 ## ✨ Features
