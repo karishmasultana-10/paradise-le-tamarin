@@ -578,7 +578,7 @@
   }
 
   footer .social-icons img {
-    width: 28px; /* Adjust size here */
+    width: 28px; 
     height: 28px;
     transition: transform 0.3s ease;
   }
