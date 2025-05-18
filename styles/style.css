@@ -305,8 +305,6 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
-  
-
  
 
 /* Tariff Section */
@@ -326,7 +324,7 @@
     text-transform: uppercase;
   }
   
-  /* Box containing the tariff cards */
+
   .tariff-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -345,7 +343,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: auto;  /* Removed fixed height */
+    height: auto; 
     position: relative;
     overflow: hidden;
   }
@@ -398,13 +396,13 @@
   /* Media Query for mobile responsiveness */
   @media (max-width: 768px) {
     .tariff-box {
-      grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+      grid-template-columns: 1fr; 
       gap: 20px;
     }
   
     .tariff-card {
       padding: 20px;
-      height: auto; /* Ensure height adjusts for content */
+      height: auto; 
     }
   
     .tariff-card .icon {
@@ -412,11 +410,11 @@
     }
   
     .tariff-card .tariff-info p {
-      font-size: 1.2rem; /* Slightly smaller font on mobile */
+      font-size: 1.2rem; 
     }
   
     .tariff-card .tariff-info span {
-      font-size: 1rem; /* Slightly smaller font for the pricing */
+      font-size: 1rem; 
     }
 
       .tariff-section h2 {
@@ -431,8 +429,6 @@
   }
   
   
-  /* --------------------------------------------- */
-  /* Complementary Services Section */
 /* Complementary Section */
 .complementary-section {
     background-color: #fff8f2;
@@ -452,14 +448,14 @@
   }
   
   .complementary-section h2:hover {
-    color: #e67e00; /* Subtle hover effect for the heading */
+    color: #e67e00;
   }
   
   /* Box containing complementary services */
   .complementary-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     max-width: 700px;
     margin: auto;
     background: #ffffff;
@@ -488,7 +484,7 @@
   
   .complementary-item i {
     font-size: 2rem;
-    color:#fda085; /* Green icon color */
+    color:#fda085; 
     margin-bottom: 10px;
   }
   
@@ -506,7 +502,7 @@
   }
   
   .complementary-item:hover i {
-    color:#d2461f /* Darker green on hover */
+    color:#d2461f 
   }
   
   /* Animation for fade-in effect */
@@ -526,7 +522,7 @@
     }
   
     .complementary-box {
-      grid-template-columns: 1fr; /* Single column on mobile */
+      grid-template-columns: 1fr; 
       padding: 25px 20px;
     }
   
@@ -540,12 +536,8 @@
       padding: 15px;
     }
   }
-  
-  
-  /* --------------------------------------------- */
-  /* Footer */
 
-   /* Footer */
+  /* Footer */
    footer {
     background-color: #040505;
     color: white;
@@ -557,6 +549,10 @@
   
   .card.footer-contact {
     text-align: center;
+  }
+
+  footer .contact-info h4{
+    font-size: 22px;
   }
   
   footer .social-section {
@@ -588,12 +584,8 @@
   }
   
   footer .social-icons img:hover {
-    transform: scale(1.15); /* Slight hover zoom */
+    transform: scale(1.15); 
   }
-  
-
-
-  /* ------------------------------- */
 
 /* Gallery Section Title */
 #gallery h2 {
@@ -653,7 +645,6 @@
   }
 }
 
-/* Lightbox Modal Styles (continued) */
 /* Lightbox Base */
 .lightbox {
   display: none;
@@ -710,4 +701,39 @@
 
 .next {
   right: 0;
+}
+
+
+#location {
+  width: 90%; 
+  max-width: 800px; 
+  height: auto; 
+  margin: 40px auto; 
+  text-align: center;
+  padding: 20px; 
+}
+#location h2{
+  color: #D87D4A;
+  padding: 15px;
+  font-size: 35px;
+}
+#location iframe {
+    width: 100%; 
+    height: 400px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+
+#location h2{
+  color:#D87D4A;
+  padding: 15px;
+  font-size: 25px;
+}
+
+ #location iframe {
+        height: 330px; 
+    }
 }
