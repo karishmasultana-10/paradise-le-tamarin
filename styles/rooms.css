@@ -401,7 +401,6 @@ body {
 @media (min-resolution: 2dppx) {
   .carousel-img,
   .modal-content {
-    /* request 2× file if you have it */
     background-size: contain;
   }
 }
