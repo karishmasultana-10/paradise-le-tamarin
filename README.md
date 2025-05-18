@@ -16,8 +16,11 @@ A **static resort‑booking website** for _Paradise Le Tamarin_—a tranquil
 ## 🔧 Tech stack
 
 **HTML • CSS • JavaScript** 
+
 **Razorpay JS SDK** 
+
 **Netlify** 
+
 **Git + GitHub**
 
 
