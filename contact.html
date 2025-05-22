@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Contact Us | Paradise Le Tamarin</title>
+
+  
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+
+  <!-- Font-Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!--  NAV  -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Paradise Le Tamarin" class="site-logo" />
+        <h1 class="logo">Paradise Le Tamarin</h1>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--  CONTACT SECTION  -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+      
+      <div class="contact-info">
+        <h2>Let’s Reach Now</h2>
+
+        <h3>Office</h3>
+        <p>
+          2nd, left of Dhana Community Check Post<br />
+          Auroville, Puducherry – 605 101
+        </p>
+
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:support@paradisebookings.in">support@paradisebookings.in</a>
+        </p>
+
+        <p>
+          <i class="fas fa-phone"></i>
+          <a href="tel:+918056954927">+91 80569 54927</a>
+        </p>
+
+        <h3>Follow Us</h3>
+        <div class="social-row">
+          <a
+            href="https://www.facebook.com/profile.php?id=61563457773817#"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/paradisegroups.official/" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://wa.me/919087201011" aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/aroul-ramasamy-a6a42a32b/" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.youtube.com/@paradisegroups.official" aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://x.com/Paradisegroups_" aria-label="Twitter"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+        </div>
+
+        <!-- Google map iframe -->
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3714.3575439249234!2d79.79801487506063!3d12.018583388216046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDAxJzA2LjkiTiA3OcKwNDgnMDIuMSJF!5e1!3m2!1sen!2sin!4v1747909510646!5m2!1sen!2sin"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Right column – contact form -->
+      <div class="contact-form-box">
+        <h3>Send a Message</h3>
+
+        <form
+          action="https://formsubmit.co/paradisestay27@gmail.com"
+          method="POST"
+          autocomplete="off"
+        >
+          
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thank you for contacting Paradise Le Tamarin! We'll get back to you shortly."
+          />
+          <input type="hidden" name="_template" value="table" />
+
+          <!-- Input fields -->
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email address" required />
+          <textarea
+            name="msg"
+            rows="5"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn">
+            Send Message&nbsp;<i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
